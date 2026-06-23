@@ -1,3 +1,7 @@
+export const dynamic = 'force-dynamic';
+
+// Le reste de votre code actuel en dessous...
+
 import { notFound } from "next/navigation"
 import Link from "next/link"
 import { Star, MapPin, ShieldCheck, Clock, Package, ArrowLeft } from "lucide-react"

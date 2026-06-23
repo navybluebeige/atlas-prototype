@@ -1,3 +1,6 @@
+export const dynamic = 'force-dynamic';
+
+// Le reste de votre code actuel en dessous...
 "use client"
 
 import { useState, useMemo, Suspense } from "react"
