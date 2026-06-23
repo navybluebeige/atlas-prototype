@@ -1,3 +1,6 @@
+export const dynamic = 'force-dynamic';
+
+// Le reste de votre code en dessous (vos imports, votre composant...)
 import { notFound } from "next/navigation"
 import Link from "next/link"
 import { Heart, ArrowLeft } from "lucide-react"
