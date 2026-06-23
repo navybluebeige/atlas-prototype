@@ -1,3 +1,7 @@
+
+export const dynamic = 'force-dynamic';
+
+// Le reste de votre code (ex: export default function ProductPage()...)
 import { notFound } from "next/navigation"
 import { products } from "@/lib/data/products"
 import { Header } from "@/components/layout/Header"
