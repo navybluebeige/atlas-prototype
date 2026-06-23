@@ -1,0 +1,133 @@
+export interface Idea {
+  id: string
+  title: string
+  description: string
+  gradient: string
+  theme: string
+  productIds: string[]
+  likes: number
+  height: "short" | "medium" | "tall"
+}
+
+export const ideas: Idea[] = [
+  {
+    id: "i1",
+    title: "Look automne doré",
+    description: "Des teintes chaudes pour accueillir l'automne avec élégance. Laines, cuirs et broderies se marient parfaitement.",
+    gradient: "from-[#C4863A] to-[#7C4A1E]",
+    theme: "Automne",
+    productIds: ["p5", "p15", "p3", "p9"],
+    likes: 284,
+    height: "tall",
+  },
+  {
+    id: "i2",
+    title: "Tenue mariage chic",
+    description: "Pour être rayonnante lors des grands moments. Kaftans brodés, robes de soirée et accessoires précieux.",
+    gradient: "from-[#D97757] to-[#8B4513]",
+    theme: "Mariage",
+    productIds: ["p1", "p6", "p5", "p16", "p22", "p24"],
+    likes: 512,
+    height: "medium",
+  },
+  {
+    id: "i3",
+    title: "Style classique intemporel",
+    description: "La sobriété élégante qui ne se démode jamais. Pièces bien coupées, matières nobles.",
+    gradient: "from-[#1F3A5F] to-[#0F1F33]",
+    theme: "Classique",
+    productIds: ["p12", "p9", "p21", "p25", "p27"],
+    likes: 176,
+    height: "short",
+  },
+  {
+    id: "i4",
+    title: "Streetwear algérien",
+    description: "Le style urbain réinterprété avec des codes locaux. Énergique, moderne et authentique.",
+    gradient: "from-[#1F3A5F] to-[#D97757]",
+    theme: "Streetwear",
+    productIds: ["p2", "p7", "p13", "p17", "p29"],
+    likes: 348,
+    height: "tall",
+  },
+  {
+    id: "i5",
+    title: "Soirée chic & moderne",
+    description: "Pour les soirées où l'on veut se démarquer. Robes sculptantes, accessoires dorés.",
+    gradient: "from-[#4A2F5A] to-[#D97757]",
+    theme: "Soirée",
+    productIds: ["p6", "p23", "p10", "p3"],
+    likes: 423,
+    height: "medium",
+  },
+  {
+    id: "i6",
+    title: "Tenue bureau professionnelle",
+    description: "Le bon équilibre entre sérieux et personnalité. Des pièces qui s'adaptent à tous les contextes professionnels.",
+    gradient: "from-[#4A6FA5] to-[#1F3A5F]",
+    theme: "Classique",
+    productIds: ["p12", "p25", "p8", "p27", "p21"],
+    likes: 198,
+    height: "short",
+  },
+  {
+    id: "i7",
+    title: "Mariage traditionnel",
+    description: "L'essence de la tradition algérienne magnifiée. Broderies centenaires, couleurs profondes et matières nobles.",
+    gradient: "from-[#F5DCC4] to-[#D97757]",
+    theme: "Mariage",
+    productIds: ["p5", "p22", "p16", "p1", "p24"],
+    likes: 671,
+    height: "tall",
+  },
+  {
+    id: "i8",
+    title: "Aïd Fitr — Joie & Élégance",
+    description: "Pour célébrer l'Aïd avec toute la splendeur qui convient. Tenues festives, couleurs vives et sourires garantis.",
+    gradient: "from-[#FACC15] to-[#D97757]",
+    theme: "Aïd",
+    productIds: ["p30", "p26", "p22", "p18", "p24"],
+    likes: 892,
+    height: "medium",
+  },
+  {
+    id: "i9",
+    title: "Été plage & détente",
+    description: "Légèreté et fluidité pour les journées ensoleillées. Tissus aériens, couleurs fraîches.",
+    gradient: "from-[#16A34A] to-[#4A6FA5]",
+    theme: "Été",
+    productIds: ["p11", "p20", "p7", "p28"],
+    likes: 267,
+    height: "short",
+  },
+  {
+    id: "i10",
+    title: "Hiver chaleureux & cosy",
+    description: "Se réchauffer avec style. Laines denses, manteaux longs et accessoires douilllets.",
+    gradient: "from-[#5C4033] to-[#1F3A5F]",
+    theme: "Hiver",
+    productIds: ["p4", "p23", "p5", "p15", "p3"],
+    likes: 319,
+    height: "tall",
+  },
+  {
+    id: "i11",
+    title: "Made in Algeria — Fierté locale",
+    description: "Célébrer le savoir-faire algérien sous toutes ses formes. Des pièces qui racontent une histoire.",
+    gradient: "from-[#16A34A] to-[#D97757]",
+    theme: "Made in Algeria",
+    productIds: ["p5", "p10", "p14", "p16", "p22", "p27", "p18"],
+    likes: 745,
+    height: "medium",
+  },
+  {
+    id: "i12",
+    title: "Cuir & Accessoires",
+    description: "L'élégance dans les détails. Maroquinerie artisanale, chaussures de caractère et accessoires intemporels.",
+    gradient: "from-[#7C5C3E] to-[#3D2B1F]",
+    theme: "Classique",
+    productIds: ["p3", "p9", "p10", "p19", "p24", "p27"],
+    likes: 381,
+    height: "short",
+  },
+]
