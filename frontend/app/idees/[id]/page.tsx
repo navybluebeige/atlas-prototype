@@ -1,4 +1,8 @@
-export const dynamic = 'force-dynamic';
+
+"use client"
+export function generateStaticParams() {
+  return [];
+}
 
 // Le reste de votre code en dessous (vos imports, votre composant...)
 import { notFound } from "next/navigation"
