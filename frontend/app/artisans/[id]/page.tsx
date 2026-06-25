@@ -1,7 +1,3 @@
-export const dynamic = 'force-dynamic';
-
-// Le reste de votre code actuel en dessous...
-
 import { notFound } from "next/navigation"
 import Link from "next/link"
 import { Star, MapPin, ShieldCheck, Clock, Package, ArrowLeft } from "lucide-react"
@@ -10,6 +6,13 @@ import { products } from "@/lib/data/products"
 import { Header } from "@/components/layout/Header"
 import { Footer } from "@/components/layout/Footer"
 import { ProductCard } from "@/components/product/ProductCard"
+
+// Configuration requise pour l'export statique (output: "export")
+export function generateStaticParams() {
+  return artisans.map((artisan) => ({
+    id: artisan.id.toString(),
+  }))
+}
 
 export default async function ArtisanProfilePage({ params }: { params: Promise<{ id: string }> }) {
   const { id } = await params
