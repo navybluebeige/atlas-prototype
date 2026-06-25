@@ -1,10 +1,3 @@
-
-"use client"
-export function generateStaticParams() {
-  return [];
-}
-
-// Le reste de votre code en dessous (vos imports, votre composant...)
 import { notFound } from "next/navigation"
 import Link from "next/link"
 import { Heart, ArrowLeft } from "lucide-react"
@@ -14,7 +7,18 @@ import { Header } from "@/components/layout/Header"
 import { Footer } from "@/components/layout/Footer"
 import { ProductCard } from "@/components/product/ProductCard"
 
-export default async function IdeaDetailPage({ params }: { params: Promise<{ id: string }> }) {
+// Configuration requise pour l'export statique (output: "export")
+export function generateStaticParams() {
+  return ideas.map((idea) => ({
+    id: idea.id,
+  }))
+}
+
+interface PageProps {
+  params: Promise<{ id: string }>
+}
+
+export default async function IdeaDetailPage({ params }: PageProps) {
   const { id } = await params
   const idea = ideas.find((i) => i.id === id)
   if (!idea) notFound()
