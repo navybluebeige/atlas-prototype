@@ -1,3 +1,6 @@
+export const dynamic = 'force-dynamic';
+
+// Le reste de votre code en dessous (vos imports, votre composant...)
 "use client"
 
 import { useState, useEffect } from "react"
